@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="106" y="98"/>
         </scene>
-        <!--View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="rsg-AW-iZ9">
             <objects>
-                <viewController storyboardIdentifier="third" id="LWD-Kg-GGe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="third" id="LWD-Kg-GGe" customClass="thirdViewController" customModule="iQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jnY-sH-q2H"/>
                         <viewControllerLayoutGuide type="bottom" id="MJX-p7-lPI"/>
@@ -106,17 +106,39 @@
                     <view key="view" contentMode="scaleToFill" id="at4-iV-E2V">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tUZ-xu-Y6h">
+                                <rect key="frame" x="0.0" y="192" width="600" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="LWD-Kg-GGe" id="tLw-S1-c0s"/>
+                                </connections>
+                            </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Which one involves reaction?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y9v-mN-BCq">
+                                <rect key="frame" x="204" y="108" width="192" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tUZ-xu-Y6h" firstAttribute="centerY" secondItem="at4-iV-E2V" secondAttribute="centerY" id="5eA-Xm-Yef"/>
+                            <constraint firstItem="Y9v-mN-BCq" firstAttribute="centerX" secondItem="at4-iV-E2V" secondAttribute="centerX" id="Ucm-MH-Fn0"/>
+                            <constraint firstItem="tUZ-xu-Y6h" firstAttribute="centerX" secondItem="at4-iV-E2V" secondAttribute="centerX" id="jwT-tD-jw7"/>
+                            <constraint firstItem="tUZ-xu-Y6h" firstAttribute="width" secondItem="at4-iV-E2V" secondAttribute="width" id="pCf-NO-ffX"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="picker3" destination="tUZ-xu-Y6h" id="r7B-pH-h4Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hwO-zc-IHr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="106" y="770"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="Pjf-0a-BOo">
             <objects>
-                <viewController storyboardIdentifier="second" id="SOk-sm-h3w" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="second" id="SOk-sm-h3w" customClass="secondViewController" customModule="iQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MRB-i3-Vph"/>
                         <viewControllerLayoutGuide type="bottom" id="oin-W6-Oo3"/>
@@ -124,8 +146,30 @@
                     <view key="view" contentMode="scaleToFill" id="a6p-8i-vld">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P11-uZ-mRa">
+                                <rect key="frame" x="0.0" y="192" width="600" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="SOk-sm-h3w" id="fda-Qu-kgA"/>
+                                </connections>
+                            </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Who can be very small?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZeW-g4-pVM">
+                                <rect key="frame" x="216" y="128" width="167" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZeW-g4-pVM" firstAttribute="centerX" secondItem="a6p-8i-vld" secondAttribute="centerX" id="Q8c-yZ-qR6"/>
+                            <constraint firstItem="P11-uZ-mRa" firstAttribute="width" secondItem="a6p-8i-vld" secondAttribute="width" id="WtA-0I-gvd"/>
+                            <constraint firstItem="P11-uZ-mRa" firstAttribute="centerX" secondItem="a6p-8i-vld" secondAttribute="centerX" id="biU-Kg-n3T"/>
+                            <constraint firstItem="P11-uZ-mRa" firstAttribute="centerY" secondItem="a6p-8i-vld" secondAttribute="centerY" id="fpV-XG-Hw6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="picker2" destination="P11-uZ-mRa" id="4rB-eW-7W5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vf4-eJ-FbI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -150,12 +194,18 @@
                                     <outlet property="delegate" destination="Bim-ht-4Rz" id="Ilj-cm-7nz"/>
                                 </connections>
                             </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="What is 3 + 2 ?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="50m-UL-LmE">
+                                <rect key="frame" x="241" y="104" width="118" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="sKT-ZP-3Py" firstAttribute="centerY" secondItem="Bim-ht-4Rz" secondAttribute="centerY" id="98d-dl-Ad2"/>
                             <constraint firstItem="sKT-ZP-3Py" firstAttribute="width" secondItem="Bim-ht-4Rz" secondAttribute="width" id="d7g-CW-dhZ"/>
                             <constraint firstItem="sKT-ZP-3Py" firstAttribute="centerX" secondItem="Bim-ht-4Rz" secondAttribute="centerX" id="dFP-ns-piM"/>
+                            <constraint firstItem="50m-UL-LmE" firstAttribute="centerX" secondItem="Bim-ht-4Rz" secondAttribute="centerX" id="x6e-JX-Ssr"/>
                         </constraints>
                     </view>
                     <connections>

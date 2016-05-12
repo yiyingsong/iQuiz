@@ -16,6 +16,8 @@
 		185DFD931CDC359F00496B75 /* science.png in Resources */ = {isa = PBXBuildFile; fileRef = 185DFD901CDC359F00496B75 /* science.png */; };
 		185DFD941CDC359F00496B75 /* superhero.png in Resources */ = {isa = PBXBuildFile; fileRef = 185DFD911CDC359F00496B75 /* superhero.png */; };
 		18EB86721CE446C6006744CF /* firstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EB86711CE446C6006744CF /* firstViewController.swift */; };
+		18EB86741CE457E1006744CF /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EB86731CE457E1006744CF /* secondViewController.swift */; };
+		18EB86761CE45A01006744CF /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EB86751CE45A01006744CF /* thirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		185DFD901CDC359F00496B75 /* science.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = science.png; sourceTree = "<group>"; };
 		185DFD911CDC359F00496B75 /* superhero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = superhero.png; sourceTree = "<group>"; };
 		18EB86711CE446C6006744CF /* firstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstViewController.swift; sourceTree = "<group>"; };
+		18EB86731CE457E1006744CF /* secondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+		18EB86751CE45A01006744CF /* thirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 			children = (
 				185DFD711CDC00DA00496B75 /* AppDelegate.swift */,
 				18EB86711CE446C6006744CF /* firstViewController.swift */,
+				18EB86731CE457E1006744CF /* secondViewController.swift */,
+				18EB86751CE45A01006744CF /* thirdViewController.swift */,
 				185DFD731CDC00DA00496B75 /* ViewController.swift */,
 				185DFD8F1CDC359F00496B75 /* math.png */,
 				185DFD901CDC359F00496B75 /* science.png */,
@@ -151,7 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EB86741CE457E1006744CF /* secondViewController.swift in Sources */,
 				185DFD741CDC00DA00496B75 /* ViewController.swift in Sources */,
+				18EB86761CE45A01006744CF /* thirdViewController.swift in Sources */,
 				185DFD721CDC00DA00496B75 /* AppDelegate.swift in Sources */,
 				18EB86721CE446C6006744CF /* firstViewController.swift in Sources */,
 			);
