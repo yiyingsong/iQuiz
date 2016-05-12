@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var items: [String] =  ["Mathematics", "Marvel Super Heros", "Science"]
     var itemsDescr: [String] = ["Can you do Math", "Here comes the superheros", "Something incredible is waiting to be known"]
     var pics = ["math.png", "superhero.png", "science.png" ]
+    var identities:[String] = ["first", "second", "third"]
     
     @IBAction func Setting(sender: UIBarButtonItem) {
         let setting = UIAlertController(title: "Alert", message: "Settings go here", preferredStyle: UIAlertControllerStyle.Alert)
@@ -52,7 +53,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+        let vcName = identities[indexPath.row]
+        let viewController = storyboard?.instantiateViewControllerWithIdentifier(vcName)
+        self.navigationController?.pushViewController(viewController!, animated: true)
     }
 
 
